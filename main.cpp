@@ -12,7 +12,7 @@
  */
 
 #include <cstdlib>
-#include <string>
+#include <string.h>
 #include <stdio.h>
 
 using namespace std;
@@ -20,14 +20,22 @@ using namespace std;
 /*
  * 
  */
+#include <iostream>
+#include <memory>
+#include <algorithm>
+#include "Test.h"
+
 int main(int argc, char** argv) {
 
-    string str1 = "hello world";
-    string str2 = str1;
-    printf("Sharing the memory:\n");
-    printf("\tstr1's address: %x\n", str1.c_str());
-    printf("\tstr2's address: %x\n", str2.c_str());
-
+    StudentType students;
+    
+    students[1].age = 10;
+    
+    cout<<students[0].age<<endl;
+    cout<<students[1].age<<endl;
+    cout<<students[2].age<<endl;
+    enum weekday sunday = mon;
+    printf("day is %d",sunday);
     return 0;
 }
 
