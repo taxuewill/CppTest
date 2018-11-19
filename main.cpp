@@ -23,19 +23,12 @@ using namespace std;
 #include <iostream>
 #include <memory>
 #include <algorithm>
-#include "Test.h"
+#include "./utils/util.h"
 
 int main(int argc, char** argv) {
 
-    StudentType students;
-    
-    students[1].age = 10;
-    
-    cout<<students[0].age<<endl;
-    cout<<students[1].age<<endl;
-    cout<<students[2].age<<endl;
-    enum weekday sunday = mon;
-    printf("day is %d",sunday);
+    Util util;
+    util.print();
     return 0;
 }
 
